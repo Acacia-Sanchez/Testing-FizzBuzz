@@ -90,4 +90,12 @@ public class FizzbuzzApplication1Tests { // Renombrado para evitar conflictos
         assertEquals("El número " + numero + " no cumple ninguna de las anteriores condiciones", result);
     }
 
+    @Test
+    public void testNoDivisiblePor5PeroContiene5() {
+        FizzbuzzApplication1 fizzbuzzapp = new FizzbuzzApplication1();
+        int numero = 52;
+        String result = fizzbuzzapp.divisibleOContiene(numero);
+        assertEquals("Buzz", result);
+    }
+        
 }
